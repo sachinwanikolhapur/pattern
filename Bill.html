@@ -1,0 +1,48 @@
+<html>  
+<head>  
+<style>
+input 
+{
+  width: 10%;
+  border: 2px solid red;
+  background-color: pink;
+}
+</style>
+
+</head>
+<body>   
+Enter the prodid(1 or 2): 
+<input type= text id = "prodid"> 
+<br><br> 
+Enter the prod qty:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+<input type= text id = "qty">  
+<br><br>  
+<button onclick = "bill()"> Bill </button>  
+ 
+<script>  
+function bill()
+{  
+
+
+const p1=100;
+const p2=200;
+
+pid = document.getElementById("prodid").value; 
+qty = document.getElementById("qty").value;
+
+if(pid==1)
+{   
+bill=qty*p1; 
+document.write("Bill = "+bill);  
+}  
+else if(pid==2)
+{
+bill=qty*p2; 
+document.write("Bill = "+bill); 
+}
+else
+document.write("Invalid id");
+}
+</script>  
+</body>  
+</html>  
